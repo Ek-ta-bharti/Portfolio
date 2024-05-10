@@ -163,14 +163,14 @@ ul
 /* Aside */
 .aside
 {
-    width:270px;
+    width: 270px;
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
     top: 0;
     padding: 30px;
     height: 100%;
-    /* border-right: 1px solid var(--bg-black-50); */
+    border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,7 +222,7 @@ ul
 }
 .aside .nav-toggler
 {
-    height:40px;
+    height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
@@ -796,7 +796,7 @@ h3.my-profession
     {
         left: -270px;
     }
-    .aside .open 
+    .aside.open 
     {
         left: 0;
     }
@@ -805,7 +805,7 @@ h3.my-profession
         display: flex;
         left: 30px;
     }
-    .aside .nav-toggler .open
+    .aside .nav-toggler.open
     {
         left: 300px;
     }
@@ -813,7 +813,7 @@ h3.my-profession
     {
         left: 0;
     }
-    .section-open
+    .section.ppen
     {
         left: 270px;
     }
