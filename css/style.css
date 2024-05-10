@@ -813,7 +813,7 @@ h3.my-profession
     {
         left: 0;
     }
-    .section.ppen
+    .section.open
     {
         left: 270px;
     }
@@ -839,8 +839,38 @@ h3.my-profession
     }
     .home .home-img
     {
-      display: none;
+      /* display: none; */
+      display: flex;
     }
+    .home .home-img
+{
+    flex: 0 0 40%;
+    max-width: 70%;
+    text-align: center;
+    position: relative;
+}
+.home-img::after
+{
+    content: '';
+    position: absolute ;
+    height: 200px;
+    width: 150px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 10px;
+    bottom: -80px;
+}
+.home-img::before
+{
+    content: '';
+    position: absolute;
+    height: 200px;
+    width: 210px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: -4px;
+    top: 50px;
+}
 }
 @media (max-width:767px)
 {
@@ -855,5 +885,17 @@ h3.my-profession
     {
         flex: 0 0 100% ;
         max-width: 100%;
+    }
+    .home .home-img
+    {
+      /* display: none; */
+      display: flex;
+    }
+    .home .home-img
+    {
+        flex: 0 0 40%;
+        max-width: 110%;
+        text-align: center;
+        position: relative;
     }
 }
